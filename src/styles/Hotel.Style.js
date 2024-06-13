@@ -125,7 +125,7 @@ export const Address = styled.span`
 `;
 
 export const DestTitle = styled.p`
-  font-size: 0.7rem;
+  font-size: 1rem;
   word-wrap: break-word;
   font-weight: bold;
   margin: 0.5rem 0;
