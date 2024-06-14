@@ -34,7 +34,10 @@ import axios from "axios";
 
 const Connexion = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const [values, setValues] = useState({ email: "", password: "" }); // Corrected field name
+  const [values, setValues] = useState({
+    email: "",
+    password: "",
+  });
   const router = useRouter();
 
   const handleChange = (e) => {
@@ -54,12 +57,11 @@ const Connexion = () => {
       localStorage.setItem("token", res.data.token);
       toast.success("Connexion réussie");
       router.push("/homePage");
-    } catch (error) {
-      console.error(error);
-      toast.error("Identifiants invalides");
+    } catch (err) {
+      console.error(err);
+      toast.error(`les informations d'identification sont invalides`);
     }
   };
-
 
   const toggleShowPassword = () => {
     setShowPassword(!showPassword);
@@ -98,7 +100,7 @@ const Connexion = () => {
                   onChange={handleChange}
                 />
                 <IconDivBtn type="button" onClick={toggleShowPassword}>
-                  <FontAwesomeIcon icon={showPassword ? faEye : faEyeSlash } />
+                  <FontAwesomeIcon icon={showPassword ?  faEye : faEyeSlash} />
                 </IconDivBtn>
               </PwdDiv>
             </StyledFrmInput>
