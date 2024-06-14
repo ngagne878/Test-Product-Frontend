@@ -54,7 +54,7 @@ const Sidebar = () => {
       if (token) {
         try {
           const userRes = await axios.get(
-            "https://textauthapi-1.onrender.com/api/auth/me",
+            "https://test-product-69xz.onrender.com/api/auth/me",
             {
               headers: {
                 "x-auth-token": token,
@@ -68,7 +68,7 @@ const Sidebar = () => {
 
           // Récupérer l'URL de l'image de profil depuis le backend
           const profileImageRes = await axios.get(
-            `https://textauthapi-1.onrender.com/api/auth/profile/${userData._id}`
+            `https://test-product-69xz.onrender.com/api/auth/profile/${userData._id}`
           );
           const profileImageUrl = profileImageRes.data.profileImageUrl;
           setUser((prevUser) => ({
@@ -130,7 +130,7 @@ const Sidebar = () => {
     try {
       const token = localStorage.getItem("token");
       const res = await axios.post(
-        "https://textauthapi-1.onrender.com/api/auth/updateProfileImage",
+        "https://test-product-69xz.onrender.com/api/auth/updateProfileImage",
         formData,
         {
           headers: {

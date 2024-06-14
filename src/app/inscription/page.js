@@ -51,7 +51,7 @@ const Register = () => {
 
     try {
       const res = await axios.post(
-        "https://textauthapi-1.onrender.com/api/auth/register",
+        "https://test-product-69xz.onrender.com/api/auth/register",
         {
           name,
           email,
