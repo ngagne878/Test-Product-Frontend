@@ -27,7 +27,7 @@ import {
 import axios from "axios";
 
 const Register = () => {
-  const [fullName, setName] = useState("");
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [termsAccepted, setTermsAccepted] = useState(false); // Ajoutez cet état
@@ -36,7 +36,7 @@ const Register = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
 
-    if (!fullName || !email || !password) {
+    if (!name || !email || !password) {
       toast.error(
         "Tous les champs sont obligatoires et les conditions doivent être acceptées !"
       );
@@ -53,7 +53,7 @@ const Register = () => {
       const res = await axios.post(
         "https://test-product-69xz.onrender.com/api/auth/register",
         {
-          fullName,
+          name,
           email,
           password,
         }
@@ -85,9 +85,9 @@ const Register = () => {
           <StyledFrmInput>
             <StyledFrmLabel htmlFor="name">Prénom</StyledFrmLabel>
             <StyledInput
-              fullName="name"
+              name="name"
               type="text"
-              value={fullName}
+              value={name}
               onChange={(e) => setName(e.target.value)}
             />
           </StyledFrmInput>
