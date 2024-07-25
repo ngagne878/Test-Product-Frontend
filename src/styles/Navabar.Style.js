@@ -44,7 +44,7 @@ export const Title = styled.span`
   position: relative;
   color: var(--text-dark);
   border-radius: 0.375rem;
-  font-size: 0.875rem;
+  font-size: 1.2rem;
   font-weight: bold;
   left: 0.5rem;
 
@@ -104,11 +104,12 @@ export const Header_Wrapper = styled.div``;
 export const Header_Box = styled.div`
   display: flex;
   flex-direction: column;
-  font-size: 0.875rem;
+font-size:18px;
   padding: 0.5rem;
   margin-left: 2rem;
 `;
-export const Header_Span = styled.span``;
+export const Header_Span = styled.span`
+`;
 
 export const SearchContainer = styled.div`
 display: flex;

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  // background-color: #171717; /* equivalent to bg-neutral-900 */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -16,8 +15,8 @@ export const Container = styled.div`
 
 export const Card = styled.div`
   width: 100%;
-  max-width: 40rem; /* equivalent to max-w-xl */
-  background-color: white;
+  max-width: 40rem; 
+  background-color:  #333; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 1rem;
@@ -31,6 +30,8 @@ export const Header = styled.div`
   gap: 12px;
   padding: 12px;
   border-bottom: 1px dotted gray;
+  color:white;
+  font-size:25px;
 `;
 
 export const Title = styled.span`
@@ -57,8 +58,8 @@ export const FrGr2oup = styled.div`
 
 export const Label = styled.label`
   display: block;
-  color: #6b7280; /* equivalent to text-gray-500 */
-  font-size: 0.875rem; /* equivalent to text-sm */
+  color:white;
+  font-size: 1rem; 
   font-weight: bold;
   margin-bottom: 0.5rem;
 `;
@@ -132,6 +133,7 @@ color: #ffffff;
 text-align: center;
 font-weight: bold;
 border-radius: 1rem;
+font-size: 1rem; 
 padding: 1rem 1rem;
 margin-top: 1rem;
 border-radius: 0.5rem;

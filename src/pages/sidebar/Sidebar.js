@@ -35,7 +35,7 @@ import {
   ToggleWrapper,
 } from "../../styles/Sidebar.Style";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ProfileAdmin from "../../app/assets/user-profile.jpg";
+import ProfileAdmin from "../../app/assets/profile.jpg";
 import { IconButton, ProfileImage } from "../../styles/Navabar.Style";
 import { useRouter } from "next/navigation";
 import axios from "axios";

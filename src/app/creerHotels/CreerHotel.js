@@ -120,7 +120,8 @@ const CreerHotel = () => {
           <Card>
             <Header>
               <ButtonModal onClick={handleClose}>
-                <FontAwesomeIcon icon={faArrowLeft} />
+                <FontAwesomeIcon icon={faArrowLeft} 
+                style={{ color: "white"}}/>
               </ButtonModal>
               <Title>Créer un nouveau hôtel</Title>
             </Header>
