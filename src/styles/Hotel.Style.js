@@ -172,7 +172,7 @@ export const ImageHotel = styled.image`
 
 export const ModalDetails = styled.div`
   max-width: 40rem;
-  background: white;
+  background: #999;
   margin: 0 auto;
   margin-top: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -186,6 +186,7 @@ export const ModalTitle = styled.div`
   font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
+  color:white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-bottom: 1rem;
 `;
@@ -194,6 +195,7 @@ export const ModalText = styled.div`
   padding: 0.5rem;
   font-size: 1rem;
   font-weight: bold;
+  color:white;
 `;
 
 export const ModalTextSpan = styled.span`
@@ -207,7 +209,7 @@ export const ModalBtnClose = styled.button`
   padding: 0.2rem 1.5rem;
   border-radius: 1rem;
   margin: 1rem;
-  background: #333;
+  background: red;
   color: white;
   border: none;
 `;
@@ -216,13 +218,13 @@ export const ModalBtnEdit = styled.button`
   padding: 0.2rem 1.5rem;
   border-radius: 1rem;
   margin: 1rem;
-  background: yellow;
+  background: #398cfa;
   color: #333;
   border: none;
   font-weight: bold;
   a {
     text-decoration: none;
-    color: #333;
+    color: yellow;
   }
 `;
 
@@ -243,19 +245,21 @@ export const ModalLabel = styled.label`
 `;
 
 export const BtnPrev = styled.button`
-  background: skyblue;
+  background: #26e897;
   border: none;
   border-radius: 1rem;
   padding: 0.3rem;
   color: #fff;
+  margin-right:3px;
 `;
 export const BtnNext = styled.button`
   border: none;
-  background: skyblue;
+  background: #26e897;
   border: none;
   border-radius: 1rem;
-  padding: 0.3rem;
+  padding: 0.4rem;
   color: #fff;
+    margin-right:3px;
 `;
 
 export const BtnPrevNext = styled.div`
@@ -293,7 +297,7 @@ export const DivEnDessous = styled.div`
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 82%;
+  width: 90%;
   // margin-top: -30rem;
   background-color: rgba(
     0,
